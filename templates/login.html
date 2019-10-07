@@ -1,0 +1,17 @@
+{% extends "loginbase.html" %}
+
+{% block title %} Login {% endblock title %}
+
+{% block content %}
+        <a href="/"><button  class="back-button"><i class="fas fa-arrow-left"></i></button></a>
+        <h1>Member login</h1>
+
+        <form action="/login" method="POST">
+            <strong><i class="fas fa-user"></i></strong><input type="text" name="username" placeholder="Username">
+            <br>
+            <strong><i class="fas fa-key"></i></strong> <input type="password" name="password" placeholder="Password">
+            <br>
+            <button type="submit" class="action-button submit-button">Login</button>
+        </form>
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "loginbase.html" %}
+
+{% block title %} Register {% endblock title %}
+
+{% block content %}
+
+        <a href="/"><button  class="back-button"><i class="fas fa-arrow-left"></i></button></a>
+        <h1>Registration</h1>
+
+        <form action="/register" method="POST">
+            <strong><i class="fas fa-user"></i></strong><input type="text" name="username" placeholder="Username">
+            <br>
+            <strong><i class="fas fa-envelope"></i></strong> <input type="text" name="user-email" placeholder="Email">
+            <br>
+            <strong><i class="fas fa-key"></i></strong> <input type="text" name="password" placeholder="Password">
+            <br>
+            <button type="submit" class="action-button submit-button">Register</button>
+        </form>
+
+{% endblock content %}

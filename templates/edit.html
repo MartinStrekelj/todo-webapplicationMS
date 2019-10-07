@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %} Edit {% endblock title %}
+
+
+
+{% block profile %}
+    <a href="/edit" style="color:black; text-decoration: none;">
+        <div><i class="fas fa-user-circle"></i></div></a>
+        <div> {{ user.username }} </div>
+{% endblock profile %}
+
+{% block subheading %} Edit {% endblock subheading %}
+
+{%  block addlist %}
+
+<div class="list-item add-list">
+<a href="/" style="color:black; text-decoration: none;">
+    <div><i class="fas fa-arrow-left"></i></div>
+</a>
+<div> <strong>Back</strong> </div>
+</div>
+
+<div class="list-item add-list">
+<a href="/logout" style="color:black; text-decoration: none;">
+    <div><i class="fas fa-sign-out-alt"></i></div>
+</a>
+<div> <strong>Logout!</strong> </div>
+</div>
+
+{% endblock addlist %}
+
+
+{% block content %}
+   <div class="edit">
+       <pre style="font-size: 20px;font-weight: bold;">
+       Username: {{ user.username }}
+
+       Email:    {{ user.email }}
+       </pre>
+       <button class="drop">Edit profile</button>
+       <div class="panel">
+           <form action="/edit" method="POST">
+                <strong>New username:</strong><input type="text" name="username" placeholder="Username">
+                <br>
+                <strong>New mail:</strong><input type="text" name="user-email" placeholder="Email">
+                <br>
+                <strong>New password:</strong><input type="password" name="password" placeholder="Password">
+                <br>
+                <strong>Repeat password:</strong><input type="password" name="password-repeat" placeholder="Repeat you password!">
+                <br>
+                <button type="submit" class="submit-button">Edit</button>
+           </form>
+       </div>
+   </div>
+
+    <script>
+    var acc = document.getElementsByClassName("drop");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+{% endblock content %}

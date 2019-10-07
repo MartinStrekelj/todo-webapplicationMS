@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block title %} Add ToDo {% endblock title %}
+
+{% block content %}
+
+    <div class="wrapper">
+        <form action="/add" method="POST">
+            ToDo:    <input type="text" name="todo_title" placeholder="ex. Homework">
+            <br>
+            Deadline:<input type="text" name="todo_deadline" placeholder="ex. 17.7">
+            <br>
+            <textarea name="todo_text" placeholder="Do math, science, and history homework"></textarea>
+            <br>
+            <button type="submit">Submit!</button>
+        </form>
+    </div>
+
+
+

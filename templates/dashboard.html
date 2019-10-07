@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock title %}
+
+
+
+{% block profile %}
+    <a href="/edit" style="color:black; text-decoration: none;">
+        <div><i class="fas fa-user-circle"></i></div></a>
+        <div> {{ user.username }} </div>
+{% endblock profile %}
+
+
+
+<!-- LISTS TEMPLATE-->
+<!--            <div class="list-item">-->
+<!--                    <a href="/dasboard/<lid>" style="color:black; text-decoration: none;">-->
+<!--                    <div><i class="fas fa-list-ul"></i></div>-->
+<!--                    </a>-->
+<!--                    <div> List # </div>-->
+<!--            </div>-->
+
+
+<!-- ADDLIST TEMPLATE -->
+
+<!-- NOTES template-->
+<!--            <div class="list-items">-->
+<!--                <div class="item"></div>-->
+<!--            </div>-->
+
+
+{% block lists %}
+            {% for list in lists:  %}
+            <div class="list-item">
+                    <a href="{{ list.id }}" style="color:black; text-decoration: none;">
+                    <div><i class="fas fa-list-ul"></i></div>
+                    </a>
+                    <div> {{ list.list_name }} </div>
+            </div>
+            {% endfor %}
+{% endblock lists %}
+
+
+
+
+{%  block addlist %}
+<div class="list-item add-list">
+<a href="/addList" style="color:black; text-decoration: none;">
+    <div><i class="fas fa-plus"></i></div>
+</a>
+<div> <strong>Add new!</strong> </div>
+</div>
+{% endblock addlist %}
+
+{% block content %}
+<div class="list-items">
+<!--                <div class="item"></div>-->
+</div>
+{% endblock content %}

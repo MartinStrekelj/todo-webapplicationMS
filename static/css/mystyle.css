@@ -1,0 +1,247 @@
+body{
+    /*Green*/
+    /*background: rgb(174,238,194);*/
+    /*background: radial-gradient(circle, rgba(174,238,194,1) 0%, rgba(209,228,208,1) 100%);*/
+
+    /*Grey*/
+    background: lightslategray;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Mansalva', cursive;
+    margin-bottom: 5px;
+}
+
+.dashboard{
+    background-color: ghostwhite;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 700px;
+    max-height: 1000px;
+    border-radius: 20px;
+    border: 2px solid black;
+/*   grid    */
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+/* Sidebar */
+
+.sidebar{
+    /*background-color: white;*/
+    position: relative;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+
+/*   grid    */
+    display: grid;
+    grid-template-rows: auto repeat(10, 1fr);
+    grid-gap: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+
+.list-item{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 10px;
+    padding:10px;
+    padding-left: 20px;
+    background-color: lightgrey;
+    font-size: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.add-list{
+    background-color: mintcream;
+    border-radius: 20px;
+    margin-bottom: 5px ;
+    border: 1px solid darkorange;
+}
+
+.list-item:hover{
+    background-color: darkorange;
+    position: relative;
+    top: 1px;
+}
+
+.edit_profile:hover{
+/*    None*/
+    background-color: lightgrey;
+}
+
+/*Content*/
+.content{
+    background-color: darkgrey;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: 3px solid black;
+
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+
+.coverphoto{
+    background-image: url("../img/desert.jpg");
+    border-top-right-radius: 20px;
+    background-size: cover;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.list-items{
+    background: mintcream;
+    border-bottom-right-radius: 20px;
+    padding: 7px;
+/*    grid */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.item{
+    background: #ffec64;
+    border: 2px outset black;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: 1px 5px;
+}
+
+.item:hover{
+    position:relative;
+    top: 1px;
+}
+
+.item:active{
+    background: orange;
+}
+
+.item button{
+    font-weight: bold;
+    background: mintcream;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: #333333 solid 1px ;
+}
+
+
+/* EDIT*/
+
+.edit{
+    background: mintcream;
+}
+
+.drop{
+    background: lightslategray;
+    color: #0f0a02;
+    cursor: pointer;
+    width: auto;
+    text-align: left;
+    border: none;
+    border-radius: 15px;
+    transition: 0.4s;
+    height: 30px;
+    font-weight: bold;
+}
+
+.active, .drop:hover{
+    background: #333333;
+    color: white;
+}
+
+.panel{
+    padding: 0 18px;
+    background-color: lightslategray;
+    color:white;
+    display: none;
+    overflow: hidden;
+}
+
+input{
+    height: 30px;
+    margin-left: 15px;
+    width: 30%;
+}
+
+.submit-button{
+    margin-top: 10px;
+}
+
+/* Add list*/
+
+.wrapper {
+    background: mintcream;
+    position: relative;
+    border-bottom-right-radius: 20px;
+}
+
+.form{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background: lightgrey;
+    width: 40%;
+    height: auto;
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+/* show list */
+
+.deleteList button{
+    position: absolute;
+
+    border: 2px solid black;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px ;
+    color: darkorange;
+}
+
+.deleteList button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.button1 {
+    positon: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.button2{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.button3{
+    position: absolute;
+    bottom: 10px;
+    left: 115px;
+}
+
+.button4 {
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+}

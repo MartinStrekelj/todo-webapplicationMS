@@ -1,0 +1,106 @@
+body{
+    /*background: rgb(174,238,194);*/
+    /*background: radial-gradient(circle, rgba(174,238,194,1) 0%, rgba(209,228,208,1) 100%);*/
+
+    background: lightslategray;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.action-button{
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:2px solid #0f0a02;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.action-button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+}
+.action-button:active {
+	position:relative;
+	top:1px;
+}
+
+input{
+    width: 60%;
+    height: 30px;
+    margin: 5px;
+    border-radius: 30px;
+    padding-left: 10px;
+    color: black;
+    position: relative;
+    left: 30px;
+    border:1px solid black;
+}
+
+.window{
+    background-color: ghostwhite;
+    border-radius: 40px;
+    width: 25%;
+    height: 300px;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+    top: 30%;
+    left:35%;
+}
+
+.submit-button{
+    width: 60%;
+    position: relative;
+    left: 38px;
+    margin-top: 10px;
+}
+
+.back-button{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: orange ;
+    border: 2px solid grey;
+}
+
+.back-button:hover{
+    border: 2px solid black;
+    font-size: 120%;
+}
+.info{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40%;
+    height: 40%;
+}
+
+.container{
+    position:absolute;
+    top:30%;
+    left:15%;
+}
