@@ -41,13 +41,17 @@
        <button class="drop">Edit profile</button>
        <div class="panel">
            <form action="/edit" method="POST">
-                <strong>New username:</strong><input type="text" name="username" placeholder="Username">
+                <label><strong>New username:</strong></label>
+               <br>
+               <input type="text" name="username" placeholder="Username">
                 <br>
-                <strong>New mail:</strong><input type="text" name="user-email" placeholder="Email">
+                <label><strong>New mail:</strong></label>
+               <br>
+               <input type="text" name="user-email" placeholder="Email">
                 <br>
-                <strong>New password:</strong><input type="password" name="password" placeholder="Password">
+                <label><strong>New password:</strong></label><input type="password" name="password" placeholder="Password">
                 <br>
-                <strong>Repeat password:</strong><input type="password" name="password-repeat" placeholder="Repeat you password!">
+                <label><strong>Repeat password:</strong></label><input type="password" name="password-repeat" placeholder="Repeat you password!">
                 <br>
                 <button type="submit" class="submit-button">Edit</button>
            </form>

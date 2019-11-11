@@ -110,7 +110,6 @@ def edit():
             user.password = hashed_pw
 
         db.add(user)
-        print("commit")
         db.commit()
 
         return redirect((url_for("edit")))

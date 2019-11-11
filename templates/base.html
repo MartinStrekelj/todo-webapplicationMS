@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>{% block title %} ToDo... {% endblock title %}</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/static/css/mystyle.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
@@ -30,7 +32,7 @@
 
         </div>
         <div class="content">
-            <div class="coverphoto">{% block deleteBtn %} {% endblock deleteBtn %}<h1 style="position: relative; bottom: 14px">{% block subheading %} Home {% endblock subheading %} </h1></div>
+            <div class="coverphoto">{% block deleteBtn %} {% endblock deleteBtn %}<h1 style="position: relative; top: 20px;color:tomato;">{% block subheading %} Home {% endblock subheading %} </h1></div>
             {% block content %}
             {% endblock content%}
         </div>

@@ -3,8 +3,8 @@ body{
     /*background: rgb(174,238,194);*/
     /*background: radial-gradient(circle, rgba(174,238,194,1) 0%, rgba(209,228,208,1) 100%);*/
 
-    /*Grey*/
-    background: lightslategray;
+    background-image: url("../img/matthew-mcbrayer-qD9xzm7yK9U-unsplash.jpg");
+    background-size: cover;
 
     font-family: 'Open Sans', sans-serif;
 }
@@ -14,20 +14,29 @@ h1{
     text-align: center;
     font-family: 'Mansalva', cursive;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .dashboard{
     background-color: ghostwhite;
     width: 70%;
+
     margin-left: 15%;
-    margin-right: 15%;
-    min-height: 700px;
-    max-height: 1000px;
+
+    /*min-height: 700px;*/
+    /*max-height: 1000px;*/
+    height: 100%;
     border-radius: 20px;
     border: 2px solid black;
 /*   grid    */
     display: grid;
     grid-template-columns: 25% 75%;
+}
+
+.tutorial{
+    background-image: url("../img/tutorialphoto.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
 }
 
 /* Sidebar */
@@ -93,7 +102,7 @@ h1{
 
 
 .coverphoto{
-    background-image: url("../img/desert.jpg");
+    background-image: url("../img/zvezdice.jpg");
     border-top-right-radius: 20px;
     background-size: cover;
     border-bottom: 2px solid black;
@@ -160,6 +169,8 @@ h1{
     transition: 0.4s;
     height: 30px;
     font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .active, .drop:hover{
@@ -168,21 +179,38 @@ h1{
 }
 
 .panel{
+    background-color: lightgrey;
     padding: 0 18px;
-    background-color: lightslategray;
-    color:white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: none;
     overflow: hidden;
+    width: 80%;
+    margin-left: 10%;
 }
 
-input{
-    height: 30px;
-    margin-left: 15px;
-    width: 30%;
+.panel input{
+    height: 20px;
+    margin-left: 20%;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    display: inline;
+}
+
+.panel label{
+    display: inline;
+    clear: left;
+    text-align: right;
 }
 
 .submit-button{
-    margin-top: 10px;
+    margin-top: 20px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    height: 30px;
 }
 
 /* Add list*/
@@ -203,6 +231,23 @@ input{
     padding: 20px;
 
     border-radius: 15px;
+}
+
+.form input{
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.form button{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    height: 30px;
+    width: auto;
 }
 
 /* show list */
@@ -245,3 +290,4 @@ input{
     bottom: 10px;
     left: 170px;
 }
+

@@ -1,10 +1,18 @@
 body{
-    /*background: rgb(174,238,194);*/
-    /*background: radial-gradient(circle, rgba(174,238,194,1) 0%, rgba(209,228,208,1) 100%);*/
 
-    background: lightslategray;
+    background-image: url("../img/matthew-mcbrayer-qD9xzm7yK9U-unsplash.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+h1{
+    font-family: 'Mansalva', cursive;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 
 .action-button{
@@ -46,28 +54,47 @@ body{
 }
 
 input{
-    width: 60%;
+    width: 75%;
     height: 30px;
     margin: 5px;
     border-radius: 30px;
     padding-left: 10px;
     color: black;
     position: relative;
-    left: 30px;
+    left: 15px;
     border:1px solid black;
 }
 
 .window{
+
+
+
+    display: flex;
+    margin-top:20%;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    margin-top: -100px;
+    margin-left: -140px;
+
+    border: 1px solid black;
+
     background-color: ghostwhite;
     border-radius: 40px;
-    width: 25%;
-    height: 300px;
-    text-align: center;
-    padding-top: 30px;
-    position: absolute;
-    top: 30%;
-    left:35%;
+    width: 300px;
+    padding-bottom: 10px;
 }
+
+.window content {
+
+    padding: 30px;
+    width: 25%;
+    height: 50%;
+}
+
 
 .submit-button{
     width: 60%;
@@ -78,10 +105,10 @@ input{
 
 .back-button{
     position: absolute;
-    top:20px;
-    left:20px;
-    width: 40px;
-    height: 40px;
+    top:10px;
+    left:10px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     background: orange ;
     border: 2px solid grey;
@@ -89,18 +116,24 @@ input{
 
 .back-button:hover{
     border: 2px solid black;
-    font-size: 120%;
-}
-.info{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 40%;
-    height: 40%;
 }
 
 .container{
     position:absolute;
     top:30%;
     left:15%;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .window{
+        top: 20%;
+        width: 100%;
+        height: 70%;
+    }
+
+    .back-button {
+        width: 40px;
+        height: 40px;
+    }
 }
